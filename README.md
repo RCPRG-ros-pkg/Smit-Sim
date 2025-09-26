@@ -156,3 +156,6 @@ You can start stopped container with:
 ```bash
 docker start SMIT-SIM
 ```
+
+## Introduction video (click on thumbnail to watch)
+[![Watch here](https://i.vimeocdn.com/video/2063470934-cbed1eae28af31789dd5d05c1a1d38f2e99348ee35d19eb959e203961376526b-d_640?region=us)](https://vimeo.com/manage/videos/1122196556)
