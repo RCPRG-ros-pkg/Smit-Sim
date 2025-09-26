@@ -1,4 +1,3 @@
-# Dockerfile.melodic
 FROM osrf/ros:melodic-desktop-full
 
 # --- Basic tools and ROS build dep
@@ -53,12 +52,12 @@ RUN mkdir -p $WS/src
 WORKDIR $WS/src
 
 # Smit-Sim (your fork or upstream), plus required deps/branches from README
-RUN git clone https://github.com/RCPRG-ros-pkg/Smit-Sim.git smit_matlab_sim && \
-    git clone -b smit-reqTab https://github.com/RCPRG-ros-pkg/tasker.git && \
+RUN git clone -b smit-reqTab https://github.com/RCPRG-ros-pkg/tasker.git && \
     git clone -b smit https://github.com/RCPRG-ros-pkg/tasker_msgs.git
 
 # Install smit-sim python requirements
-WORKDIR $WS/src/smit_matlab_sim
+COPY . $WS/src/smit_sim
+WORKDIR $WS/src/smit_sim
 RUN python3 -m pip install -r requirements.txt
 
 # --- Install system deps via rosdep, then build

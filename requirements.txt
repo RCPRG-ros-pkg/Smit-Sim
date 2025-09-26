@@ -1,7 +1,7 @@
-PyYAML==5.3.1
+PyYAML==6.0.1
 numpy==1.21.5
-tensorflow==2.6.2
-keras==2.6.0
+tensorflow==2.8.0
+keras==2.8.0
 keras-rl2==1.0.5
 gym==0.24.1
 spatialmath-python==1.0.0
