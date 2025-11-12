@@ -114,6 +114,11 @@ source devel/setup.bash
 rosrun smit_sim train_dqnagent.py
 ```
 
+## Modifying/creating new evaluation function
+The above repository contains several evaluation functions. These can be found within the scripts/global_planner/my_eval_functions.py folder and can be easily modified. For example, in order to change the reward for completing a job within a DQNEval evaluation function, one can change the appropriate class property - reward_job_complete.
+
+In order to create a new evaluation function, two new classes must should be created: one inheriting from the EvalResult and one inheriting from EvalFunction. The first class should contains properties corresponding to any information, that the system can receive from the newly implemented evaluation function. An object of this class will be returned to the system after every evaluation. The second class should contain the actual evaluation calculations - they must be placed within the necessary calculate_results() function. This function must create, fill and return an instance of the newly created result type.
+
 ## Docker
 For easy use and a reproducible setup, we provide a Docker image that bundles ROS Melodic, Python 3.7, and all required dependencies. It supports GUI tools (RViz, rqt, Gazebo) via X11 and uses host networking for ROS out of the box. Build and run with the commands below.
 
