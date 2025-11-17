@@ -174,3 +174,10 @@ docker start SMIT-SIM
 
 ## Introduction video (click on thumbnail to watch)
 [![Watch here](https://i.vimeocdn.com/video/2063470934-cbed1eae28af31789dd5d05c1a1d38f2e99348ee35d19eb959e203961376526b-d_640?region=us)](https://vimeo.com/manage/videos/1122196556)
+
+## Example hardware configurations
+The above system was successfully run at the following hardware configurations:
+- CPU: Intel(R) Core(TM) i7-4510U CPU @ 2.00GHz, RAM: 16Gb, GPU: Intel® HD Graphics 4400 (HSW GT2)
+- CPU: AMD Ryzen 5 2600X Six-Core Processor, RAM: 32Gb, GPU: NVIDIA Corporation GP107GL [Quadro P400]
+- CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 CPU @ 2.40GHz, RAM: 16Gb, GPU: None
+- CPU: 12th Gen Intel(R) Core(TM) i9-12900K, RAM: 32Gb, GPU: NVIDIA GeForce RTX 3080 Ti
