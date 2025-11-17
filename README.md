@@ -117,12 +117,16 @@ rosrun smit_sim train_dqnagent.py
 ### DQN training parameters
 The training parameters placed in this repository are meant as an example. The user can freely change any of their values to adapt to the current problem by modifying the parameters of the created object from the DQNConfig class. An example of training parameter modification can be found at the bottom of the previously mentioned training script (scripts/global_planner/train_dqnagent.py) or in the image below.
 
-<img width="1000" height="271" alt="obraz" src="https://github.com/user-attachments/assets/3bd02df0-1f73-4ea8-9ab3-d4432474a623" />
+<img width="1000" alt="obraz" src="https://github.com/user-attachments/assets/3bd02df0-1f73-4ea8-9ab3-d4432474a623" />
 
 ### DQN network structure
 The user may also freely modify the DQN network structure. This can be achieved by modifying the build_model() function of the DQNAgent class, located in scripts/global_planner/my_agents.py.
 
-<img width="1000" height="179" alt="obraz" src="https://github.com/user-attachments/assets/10aaa104-be97-42cf-8684-e0e013231e55" />
+<img width="1000" alt="obraz" src="https://github.com/user-attachments/assets/10aaa104-be97-42cf-8684-e0e013231e55" />
+
+The current flow structure of the network is presented in the image below.
+
+![dqn_agent_new](https://github.com/user-attachments/assets/f8337413-6877-4053-9dea-bd6c6cda79c9)
 
 ## Modifying/creating a new evaluation function
 The above repository contains several evaluation functions. These can be found within the scripts/global_planner/my_eval_functions.py folder and can be easily modified. For example, in order to change the reward for completing a job within a DQNEval evaluation function, one can change the appropriate class property - reward_job_complete.
