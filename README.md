@@ -1,5 +1,7 @@
 # Smit Sim
 
+This repository contains code used during the creation of the article "TaBSA – A framework for training and benchmarking algorithms scheduling tasks for mobile robots working in dynamic environments". The block diagrams presented in the article were generated within the Visual Paradigm software and can be accessed by opening the project file: vp_project/SMIT.vpp . The project file can be opened using the community version of Visual Paradigm.
+
 ## Instalation
 
 1. Install appropriate libraries.
